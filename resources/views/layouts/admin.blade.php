@@ -13,6 +13,12 @@
   <meta name="author" content="">
   <title>Laravel Admin Blue Light</title>
 
+  <script>
+      /* yeah we need this empty stylesheet here. It's cool chrome & chromium fix
+         chrome fix https://code.google.com/p/chromium/issues/detail?id=167083
+                    https://code.google.com/p/chromium/issues/detail?id=332189
+      */
+  </script>
   <!-- Fonts
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
@@ -21,16 +27,6 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
 <link href="{{ asset('css/application.min.css') }}" rel="stylesheet">
 
-
-<style>
-body {
-  font-family: 'Lato';
-}
-
-.fa-btn {
-  margin-right: 6px;
-}
-</style>
 </head>
 <body class="background-dark">
   <div class="logo">
