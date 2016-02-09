@@ -976,15 +976,15 @@
 </div>
 </div>
 <!-- common libraries. required for every page-->
-<script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="lib/jquery-pjax/jquery.pjax.js"></script>
-<script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-<script src="lib/widgster/widgster.js"></script>
-<script src="lib/underscore/underscore.js"></script>
+<script src="{{ asset('lib/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('lib/jquery-pjax/jquery.pjax.js') }}"></script>
+<script src="{{ asset('lib/bootstrap-sass/assets/javascripts/bootstrap.min.js') }}"></script>
+<script src="{{ asset('lib/widgster/widgster.js') }}"></script>
+<script src="{{ asset('lib/underscore/underscore.js') }}"></script>
 
 <!-- common application js -->
-<script src="js/app.js"></script>
-<script src="js/settings.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/settings.js') }}"></script>
 
 <!-- common templates -->
 <script type="text/template" id="settings-template">
@@ -1037,19 +1037,18 @@
     </script>
     @yield('content')
 
-    <script src="lib/slimScroll/jquery.slimscroll.min.js"></script>
-    <script src="lib/jquery.sparkline/index.js"></script>
+    <script src="{{ asset('lib/slimScroll/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('lib/jquery.sparkline/index.js') }}"></script>
 
-    <script src="lib/backbone/backbone.js"></script>
-    <script src="lib/backbone.localStorage/backbone.localStorage-min.js"></script>
+    <script src="{{ asset('lib/backbone/backbone.js') }}"></script>
+    <script src="{{ asset('lib/backbone.localStorage/backbone.localStorage-min.js') }}"></script>
 
-    <script src="lib/d3/d3.min.js"></script>
-    <script src="lib/nvd3/build/nv.d3.min.js"></script>
+    <script src="{{ asset('lib/d3/d3.min.js') }}"></script>
+    <script src="{{ asset('lib/nvd3/build/nv.d3.min.js') }}"></script>
 
     <!-- page application js -->
-    <script src="js/index.js"></script>
-    <script src="js/chat.js"></script>
-
+    <script src="{{ asset('js/index.js') }}"></script>
+    <script src="{{ asset('js/chat.js') }}"></script>
     <!-- page template -->
     <script type="text/template" id="message-template">
         <div class="sender pull-left">
@@ -1068,7 +1067,6 @@
             </div>
         </div>
     </script>
-
 
   </body>
   </html>
