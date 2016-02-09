@@ -27,6 +27,8 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
 <link href="{{ asset('css/application.min.css') }}" rel="stylesheet">
 
+
+
 </head>
 <body class="background-dark">
   <div class="logo">
@@ -973,7 +975,16 @@
   <i class="fa fa-circle-o-notch fa-spin"></i>
 </div>
 </div>
+<!-- common libraries. required for every page-->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/jquery-pjax/jquery.pjax.js"></script>
+<script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="lib/widgster/widgster.js"></script>
+<script src="lib/underscore/underscore.js"></script>
 
+<!-- common application js -->
+<script src="js/app.js"></script>
+<script src="js/settings.js"></script>
 
 <!-- common templates -->
 <script type="text/template" id="settings-template">
@@ -1026,16 +1037,18 @@
     </script>
     @yield('content')
 
-    <!-- common libraries. required for every page-->
-    <script src="{{ assets('lib/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ assets('lib/jquery-pjax/jquery.pjax.js') }}"></script>
-    <script src="{{ assets('lib/bootstrap-sass/assets/javascripts/bootstrap.min.js') }}"></script>
-    <script src="{{ assets('lib/widgster/widgster.js') }}"></script>
-    <script src="{{ assets('lib/underscore/underscore.js') }}"></script>
+    <script src="lib/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="lib/jquery.sparkline/index.js"></script>
 
-    <!-- common application js -->
-    <script src="{{ assets('js/app.js') }}"></script>
-    <script src="{{ assets('js/settings.js') }}"></script>
+    <script src="lib/backbone/backbone.js"></script>
+    <script src="lib/backbone.localStorage/backbone.localStorage-min.js"></script>
+
+    <script src="lib/d3/d3.min.js"></script>
+    <script src="lib/nvd3/build/nv.d3.min.js"></script>
+
+    <!-- page application js -->
+    <script src="js/index.js"></script>
+    <script src="js/chat.js"></script>
 
     <!-- page template -->
     <script type="text/template" id="message-template">
@@ -1055,5 +1068,7 @@
             </div>
         </div>
     </script>
+
+
   </body>
   </html>
