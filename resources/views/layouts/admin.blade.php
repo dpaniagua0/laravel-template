@@ -973,16 +973,7 @@
   <i class="fa fa-circle-o-notch fa-spin"></i>
 </div>
 </div>
-<!-- common libraries. required for every page-->
-<script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="lib/jquery-pjax/jquery.pjax.js"></script>
-<script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-<script src="lib/widgster/widgster.js"></script>
-<script src="lib/underscore/underscore.js"></script>
 
-<!-- common application js -->
-<script src="js/app.js"></script>
-<script src="js/settings.js"></script>
 
 <!-- common templates -->
 <script type="text/template" id="settings-template">
