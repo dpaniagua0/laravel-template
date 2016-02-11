@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +24,10 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('/', function () {
+        return view('login');
+    });
+
 });
 
 Route::group(['middleware' => 'web'], function () {

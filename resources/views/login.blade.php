@@ -8,8 +8,9 @@
             </header>
             <div class="body">
                 <form class="no-margin"
-                      action="http://demo.flatlogic.com/3.2.1/transparent/index.html" method="get">
+                      action="{{ url('/login') }}" method="post">
                     <fieldset>
+                        {!! csrf_field() !!}
                         <div class="form-group">
                             <label for="email" >Email</label>
                             <div class="input-group">
@@ -17,7 +18,12 @@
                                         <i class="fa fa-user"></i>
                                     </span>
                                 <input id="email" type="email" class="form-control input-lg input-transparent"
-                                       placeholder="Your Email">
+                                       placeholder="Your Email" value="{{ old('email') }}" name="email">
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
@@ -28,7 +34,12 @@
                                         <i class="fa fa-lock"></i>
                                     </span>
                                 <input id="password" type="password" class="form-control input-lg input-transparent"
-                                       placeholder="Your Password">
+                                       placeholder="Your Password" name="password">
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                     </fieldset>
@@ -37,7 +48,7 @@
                             <span class="small-circle"><i class="fa fa-caret-right"></i></span>
                             <small>Sign In</small>
                         </button>
-                        <a class="forgot" href="#">Forgot Username or Password?</a>
+                        <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
                     </div>
                 </form>
             </div>
