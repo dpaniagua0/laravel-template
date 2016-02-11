@@ -167,7 +167,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </li>
-      <li class="hidden-xs"><a href="login.html"><i class="fa fa-sign-out"></i></a></li>
+      <li class="hidden-xs"><a href="{{url('logout')}}"><i class="fa fa-sign-out"></i></a></li>
     </ul>
     <form id="search-form" class="navbar-form pull-right" role="search">
       <input type="search" class="form-control search-query" placeholder="Search...">
