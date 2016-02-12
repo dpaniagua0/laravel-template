@@ -27,7 +27,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="{{ asset('css/application.min.css') }}" rel="stylesheet">
 
-
+    @yield('custom-css')
 
 </head>
 <body class="background-dark">

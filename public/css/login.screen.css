@@ -1,0 +1,8 @@
+/**
+* Login screen css
+*
+*/
+
+.has-error > input {
+    border: 1px solid #fff !important;
+}

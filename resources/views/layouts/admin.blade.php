@@ -27,7 +27,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
   <link href="{{ asset('css/application.min.css') }}" rel="stylesheet">
 
-
+  @yield('custom-css')
 
 </head>
 <body class="background-dark">
@@ -40,7 +40,7 @@
   @include('layouts.pageheader')
 
   <div class="content container">
-    <h2 class="page-title">Dashboard <small>Statistics and more</small></h2>
+    <h2 class="page-title">Dashboard</h2>
     <div class="row">
       <div class="col-lg-12">
         <section class="widget large">
